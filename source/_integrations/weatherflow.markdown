@@ -41,14 +41,14 @@ This {% term integration %} will expose the following sensors:
 - Precipitation intensity ([extrapolated](https://weatherflow.github.io/Tempest/api/derived-metric-formulas.html#rain-rate) from the accumulation over the previous minute)
 - Precipitation type
 - Temperature
-- UV index
+- UV index_The
 - Vapor pressure
 - Wet bulb temperature
 - Wind direction
 - Wind direction average
 - Wind gust
 - Wind lull
-- Wind speed
+- Wind speed 
 
 ## Diagnostic sensors
 
@@ -61,3 +61,9 @@ Additionally the following diagnostic sensors are available:
 ## Networking notes
 
 This {% term integration %} relies on the ability of Home Assistant to receive `UDP` traffic on port `50222`. You may run into trouble if you have a more complex network setup utilizing either VLANs or multiple subnets.
+
+Opnsense 'UDP Broadcast Relay' will do this.
+ -  Relay Port : 50222
+ -  Relay Interfaces : *The 2 interface to bridge*
+ -   Instance ID : *Any Nmuber between 1 and 6*
+ -  Use TTL for ID : True
